@@ -1,0 +1,54 @@
+﻿{
+  "name": "Затраченное время",
+  "modelName": "затраченное-время",
+  "className": "ЗатрВремя",
+  "nameSpace": "",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЗатрВремяE",
+      "modelName": "затраченное-время",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Время",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ЗатрВремяL",
+      "modelName": "затраченное-время",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Время",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Дир отд по раб с кл",
+  "name": "IISItog10ДирОтдПоРабСКлE",
+  "className": "ДирОтдПоРабСКлE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "директор-отдела-по-работе-с-клиентами",
+      "modelProjection": "ДирОтдПоРабСКлE"
+    }
+  ]
+}

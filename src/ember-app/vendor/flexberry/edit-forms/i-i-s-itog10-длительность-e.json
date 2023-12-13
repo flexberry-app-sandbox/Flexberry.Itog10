@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Длительность",
+  "name": "IISItog10ДлительностьE",
+  "className": "ДлительностьE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-itog10-длительность",
+      "modelProjection": "ДлительностьE"
+    }
+  ]
+}

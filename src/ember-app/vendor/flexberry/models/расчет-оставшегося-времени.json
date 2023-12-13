@@ -1,0 +1,110 @@
+﻿{
+  "name": "Расчет оставшегося времени",
+  "modelName": "расчет-оставшегося-времени",
+  "className": "РасчетОстВрем",
+  "nameSpace": "",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "времяПоДоговору",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "доступно",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "использовано",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "оказУсл",
+      "relatedTo": "оказание-услуг",
+      "inverse": "расчетОстВрем"
+    }
+  ],
+  "projections": [
+    {
+      "name": "РасчетОстВремE",
+      "modelName": "расчет-оставшегося-времени",
+      "attrs": [
+        {
+          "name": "времяПоДоговору",
+          "caption": "Время по договору",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "доступно",
+          "caption": "Доступно",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "использовано",
+          "caption": "Использовано",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ОказУслугE",
+          "caption": "Оказанные услуги",
+          "name": "оказУсл",
+          "relatedTo": "оказание-услуг",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "РасчетОстВремL",
+      "modelName": "расчет-оставшегося-времени",
+      "attrs": [
+        {
+          "name": "времяПоДоговору",
+          "caption": "Время по договору",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "доступно",
+          "caption": "Доступно",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "использовано",
+          "caption": "Использовано",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

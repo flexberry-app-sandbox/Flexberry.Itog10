@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-itog10-услуги-e",
+  "editForm": "i-i-s-itog10-услуги-e",
+  "external": false,
+  "caption": "Услуги",
+  "name": "IISItog10УслугиL",
+  "className": "УслугиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-itog10-услуги",
+      "modelProjection": "УслугиL"
+    }
+  ]
+}

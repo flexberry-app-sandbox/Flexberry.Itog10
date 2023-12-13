@@ -1,0 +1,80 @@
+﻿{
+  "applicationCaption": "Itog10",
+  "applicationTitle": "Itog10",
+  "items": [
+    {
+      "link": null,
+      "menuName": "прочее",
+      "caption": "Прочее",
+      "title": "Прочее",
+      "children": [
+        {
+          "link": "i-i-s-itog10-длительность-l",
+          "menuName": null,
+          "caption": "Длительность",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-itog10-затр-время-l",
+          "menuName": null,
+          "caption": "Затр время",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-itog10-услуги-l",
+          "menuName": null,
+          "caption": "Услуги",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "справочники",
+      "caption": "Справочники",
+      "title": "Справочники",
+      "children": [
+        {
+          "link": "i-i-s-itog10-дир-отд-по-раб-с-кл-l",
+          "menuName": null,
+          "caption": "Дир отд по раб с кл",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-itog10-клиент-l",
+          "menuName": null,
+          "caption": "Клиент",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "документы",
+      "caption": "Документы",
+      "title": "Документы",
+      "children": [
+        {
+          "link": "i-i-s-itog10-расчет-ост-врем-l",
+          "menuName": null,
+          "caption": "Расчет ост врем",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-itog10-договор-l",
+          "menuName": null,
+          "caption": "Договор",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

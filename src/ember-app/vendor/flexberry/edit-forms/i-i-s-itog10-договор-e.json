@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Директор отдела по работе с клиентами",
+      "projection": "ДирОтдПоРабСКлL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Клиент",
+      "projection": "КлиентL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Договор",
+  "name": "IISItog10ДоговорE",
+  "className": "ДоговорE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-itog10-договор",
+      "modelProjection": "ДоговорE"
+    }
+  ]
+}

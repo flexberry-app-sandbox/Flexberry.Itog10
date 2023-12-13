@@ -1,0 +1,170 @@
+<h3 class="ui header">{{t "forms.i-i-s-itog10-договор-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.номер
+      class=(if (v-get validationModel "номер" "isInvalid") "error")
+      label=(t "forms.i-i-s-itog10-договор-e.номер-caption")
+      data-test-i-i-s-itog10-договор-e-номер=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "номер" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-itog10-договор-e.дата-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.дата
+      class=(if (v-get validationModel "дата" "isInvalid") "error")
+      data-test-i-i-s-itog10-договор-e-дата=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "дата" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-itog10-договор-e-статус="true">
+    <label>{{t "forms.i-i-s-itog10-договор-e.статус-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-itog10-статус")
+      value=model.статус
+      class=(if (v-get validationModel "статус" "isInvalid") "error")
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "статус" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-itog10-договор-e-тип="true">
+    <label>{{t "forms.i-i-s-itog10-договор-e.тип-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-itog10-тип-договора")
+      value=model.тип
+      class=(if (v-get validationModel "тип" "isInvalid") "error")
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "тип" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.стоимость
+      class=(if (v-get validationModel "стоимость" "isInvalid") "error")
+      label=(t "forms.i-i-s-itog10-договор-e.стоимость-caption")
+      data-test-i-i-s-itog10-договор-e-стоимость=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "стоимость" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-itog10-договор-e.дирОтдПоРабСКл-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.дирОтдПоРабСКл
+      relationName="дирОтдПоРабСКл"
+      projection="ДирОтдПоРабСКлL"
+      title=(t "forms.i-i-s-itog10-договор-e.дирОтдПоРабСКл-caption")
+      readonly=readonly
+      componentName="дирОтдПоРабСКлLookup"
+      class=(if (v-get validationModel "дирОтдПоРабСКл" "isInvalid") "error")
+      data-test-i-i-s-itog10-договор-e-дирОтдПоРабСКл=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "дирОтдПоРабСКл" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.дирОтдПоРабСКл.фамилия
+      class=(if (v-get validationModel.дирОтдПоРабСКл "фамилия" "isInvalid") "error")
+      label=(t "forms.i-i-s-itog10-договор-e.дирОтдПоРабСКл.фамилия-caption")
+      data-test-i-i-s-itog10-договор-e-дирОтдПоРабСКл-фамилия=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.дирОтдПоРабСКл "фамилия" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.дирОтдПоРабСКл.имя
+      class=(if (v-get validationModel.дирОтдПоРабСКл "имя" "isInvalid") "error")
+      label=(t "forms.i-i-s-itog10-договор-e.дирОтдПоРабСКл.имя-caption")
+      data-test-i-i-s-itog10-договор-e-дирОтдПоРабСКл-имя=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.дирОтдПоРабСКл "имя" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.дирОтдПоРабСКл.отчество
+      class=(if (v-get validationModel.дирОтдПоРабСКл "отчество" "isInvalid") "error")
+      label=(t "forms.i-i-s-itog10-договор-e.дирОтдПоРабСКл.отчество-caption")
+      data-test-i-i-s-itog10-договор-e-дирОтдПоРабСКл-отчество=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.дирОтдПоРабСКл "отчество" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-itog10-договор-e.клиент-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.клиент
+      relationName="клиент"
+      projection="КлиентL"
+      title=(t "forms.i-i-s-itog10-договор-e.клиент-caption")
+      readonly=readonly
+      componentName="клиентLookup"
+      class=(if (v-get validationModel "клиент" "isInvalid") "error")
+      data-test-i-i-s-itog10-договор-e-клиент=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "клиент" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.клиент.фамилия
+      class=(if (v-get validationModel.клиент "фамилия" "isInvalid") "error")
+      label=(t "forms.i-i-s-itog10-договор-e.клиент.фамилия-caption")
+      data-test-i-i-s-itog10-договор-e-клиент-фамилия=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.клиент "фамилия" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.клиент.имя
+      class=(if (v-get validationModel.клиент "имя" "isInvalid") "error")
+      label=(t "forms.i-i-s-itog10-договор-e.клиент.имя-caption")
+      data-test-i-i-s-itog10-договор-e-клиент-имя=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.клиент "имя" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.клиент.отчество
+      class=(if (v-get validationModel.клиент "отчество" "isInvalid") "error")
+      label=(t "forms.i-i-s-itog10-договор-e.клиент.отчество-caption")
+      data-test-i-i-s-itog10-договор-e-клиент-отчество=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.клиент "отчество" "message")}}
+  </div>
+</form>

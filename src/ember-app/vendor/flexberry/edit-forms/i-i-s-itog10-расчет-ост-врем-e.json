@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": "договор",
+      "displayAttributeName": null,
+      "required": true,
+      "relationName": "ОказУсл.Договор",
+      "projection": "ДоговорL",
+      "detailModelName": "оказание-услуг"
+    },
+    {
+      "master": "услуги",
+      "displayAttributeName": null,
+      "required": true,
+      "relationName": "ОказУсл.Услуги",
+      "projection": "УслугиL",
+      "detailModelName": "оказание-услуг"
+    }
+  ],
+  "external": false,
+  "caption": "Расчет ост врем",
+  "name": "IISItog10РасчетОстВремE",
+  "className": "РасчетОстВремE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "расчет-оставшегося-времени",
+      "modelProjection": "РасчетОстВремE"
+    }
+  ]
+}

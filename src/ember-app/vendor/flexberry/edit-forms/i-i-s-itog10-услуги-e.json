@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Услуги",
+  "name": "IISItog10УслугиE",
+  "className": "УслугиE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-itog10-услуги",
+      "modelProjection": "УслугиE"
+    }
+  ]
+}

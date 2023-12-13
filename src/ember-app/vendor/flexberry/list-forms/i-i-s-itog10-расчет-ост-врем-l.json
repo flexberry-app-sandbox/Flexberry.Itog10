@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-itog10-расчет-ост-врем-e",
+  "editForm": "i-i-s-itog10-расчет-ост-врем-e",
+  "external": false,
+  "caption": "Расчет ост врем",
+  "name": "IISItog10РасчетОстВремL",
+  "className": "РасчетОстВремL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "расчет-оставшегося-времени",
+      "modelProjection": "РасчетОстВремL"
+    }
+  ]
+}

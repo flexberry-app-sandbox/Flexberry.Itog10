@@ -1,0 +1,270 @@
+﻿{
+  "name": "IISItog10Договор",
+  "modelName": "i-i-s-itog10-договор",
+  "className": "Договор",
+  "nameSpace": "IIS.Itog10",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "статус",
+      "type": "i-i-s-itog10-статус",
+      "flexberryType": "Статус",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "стоимость",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "тип",
+      "type": "i-i-s-itog10-тип-договора",
+      "flexberryType": "ТипДоговора",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "дирОтдПоРабСКл",
+      "relatedTo": "директор-отдела-по-работе-с-клиентами",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "длительность",
+      "relatedTo": "i-i-s-itog10-длительность",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "клиент",
+      "relatedTo": "i-i-s-itog10-клиент",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ДоговорE",
+      "modelName": "i-i-s-itog10-договор",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "статус",
+          "caption": "Статус",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "тип",
+          "caption": "Тип",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "стоимость",
+          "caption": "Стоимость",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Директор отдела по работе с клиентами",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "Фамилия директора",
+              "hidden": false,
+              "index": 6
+            },
+            {
+              "name": "имя",
+              "caption": "Имя директора",
+              "hidden": false,
+              "index": 7
+            },
+            {
+              "name": "отчество",
+              "caption": "Отчество директора",
+              "hidden": false,
+              "index": 8
+            }
+          ],
+          "index": 5,
+          "type": "default",
+          "caption": "Директор",
+          "name": "дирОтдПоРабСКл",
+          "relatedTo": "директор-отдела-по-работе-с-клиентами",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Клиент",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "Фамилия клиента",
+              "hidden": false,
+              "index": 10
+            },
+            {
+              "name": "имя",
+              "caption": "Имя клиента",
+              "hidden": false,
+              "index": 11
+            },
+            {
+              "name": "отчество",
+              "caption": "Отчество клиента",
+              "hidden": false,
+              "index": 12
+            }
+          ],
+          "index": 9,
+          "type": "default",
+          "caption": "Клиент",
+          "name": "клиент",
+          "relatedTo": "i-i-s-itog10-клиент",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ДоговорL",
+      "modelName": "i-i-s-itog10-договор",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "статус",
+          "caption": "Статус",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "тип",
+          "caption": "Тип",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "стоимость",
+          "caption": "Стоимость",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Директор отдела по работе с клиентами",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "Фамилия директора",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Фамилия директора",
+          "name": "дирОтдПоРабСКл",
+          "relatedTo": "директор-отдела-по-работе-с-клиентами",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Клиент",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "Фамилия клиента",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Фамилия клиента",
+          "name": "клиент",
+          "relatedTo": "i-i-s-itog10-клиент",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
