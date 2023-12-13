@@ -26,7 +26,7 @@ namespace IIS.Itog10
     // *** Start programmer edit section *** (РасчетОстВрем CustomAttributes)
 
     // *** End programmer edit section *** (РасчетОстВрем CustomAttributes)
-    [PublishName("Расчет оставшегося времени")]
+    [PublishName("РасчетОставшегосяВремени")]
     [AutoAltered()]
     [Caption("Расчет ост врем")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]

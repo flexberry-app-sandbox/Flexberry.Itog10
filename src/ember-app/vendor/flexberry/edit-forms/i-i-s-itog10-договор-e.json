@@ -4,7 +4,7 @@
       "master": null,
       "displayAttributeName": null,
       "required": false,
-      "relationName": "Директор отдела по работе с клиентами",
+      "relationName": "ДиректорОтделаПоРаботеСКлиентами",
       "projection": "ДирОтдПоРабСКлL",
       "detailModelName": null
     },

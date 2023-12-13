@@ -116,7 +116,7 @@
         {
           "lookupValue": null,
           "lookupValueField": null,
-          "relationName": "Директор отдела по работе с клиентами",
+          "relationName": "ДиректорОтделаПоРаботеСКлиентами",
           "belongsTo": [],
           "hidden": false,
           "attrs": [
@@ -221,7 +221,7 @@
         {
           "lookupValue": null,
           "lookupValueField": null,
-          "relationName": "Директор отдела по работе с клиентами",
+          "relationName": "ДиректорОтделаПоРаботеСКлиентами",
           "belongsTo": [],
           "hidden": false,
           "attrs": [

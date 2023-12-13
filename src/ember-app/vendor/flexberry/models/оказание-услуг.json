@@ -1,5 +1,5 @@
 ﻿{
-  "name": "Оказание услуг",
+  "name": "ОказаниеУслуг",
   "modelName": "оказание-услуг",
   "className": "ОказУслуг",
   "nameSpace": "",
@@ -97,7 +97,7 @@
             {
               "lookupValue": null,
               "lookupValueField": null,
-              "relationName": "Услуги.Затраченное время",
+              "relationName": "Услуги.ЗатраченноеВремя",
               "belongsTo": [],
               "hidden": false,
               "attrs": [

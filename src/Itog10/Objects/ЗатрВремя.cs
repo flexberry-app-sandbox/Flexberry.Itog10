@@ -26,7 +26,7 @@ namespace IIS.Itog10
     // *** Start programmer edit section *** (ЗатрВремя CustomAttributes)
 
     // *** End programmer edit section *** (ЗатрВремя CustomAttributes)
-    [PublishName("Затраченное время")]
+    [PublishName("ЗатраченноеВремя")]
     [AutoAltered()]
     [Caption("Затр время")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]

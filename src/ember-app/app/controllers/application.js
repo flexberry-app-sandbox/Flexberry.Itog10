@@ -28,19 +28,19 @@ export default Controller.extend({
             link: 'i-i-s-itog10-длительность-l',
             caption: i18n.t('forms.application.sitemap.прочее.i-i-s-itog10-длительность-l.caption'),
             title: i18n.t('forms.application.sitemap.прочее.i-i-s-itog10-длительность-l.title'),
-            icon: 'archive',
+            icon: 'folder',
             children: null
           }, {
             link: 'i-i-s-itog10-затр-время-l',
             caption: i18n.t('forms.application.sitemap.прочее.i-i-s-itog10-затр-время-l.caption'),
             title: i18n.t('forms.application.sitemap.прочее.i-i-s-itog10-затр-время-l.title'),
-            icon: 'list',
+            icon: 'chart bar',
             children: null
           }, {
             link: 'i-i-s-itog10-услуги-l',
             caption: i18n.t('forms.application.sitemap.прочее.i-i-s-itog10-услуги-l.caption'),
             title: i18n.t('forms.application.sitemap.прочее.i-i-s-itog10-услуги-l.title'),
-            icon: 'calendar',
+            icon: 'chart bar',
             children: null
           }]
         }, {
@@ -52,13 +52,13 @@ export default Controller.extend({
             link: 'i-i-s-itog10-дир-отд-по-раб-с-кл-l',
             caption: i18n.t('forms.application.sitemap.справочники.i-i-s-itog10-дир-отд-по-раб-с-кл-l.caption'),
             title: i18n.t('forms.application.sitemap.справочники.i-i-s-itog10-дир-отд-по-раб-с-кл-l.title'),
-            icon: 'address card',
+            icon: 'suitcase',
             children: null
           }, {
             link: 'i-i-s-itog10-клиент-l',
             caption: i18n.t('forms.application.sitemap.справочники.i-i-s-itog10-клиент-l.caption'),
             title: i18n.t('forms.application.sitemap.справочники.i-i-s-itog10-клиент-l.title'),
-            icon: 'calendar',
+            icon: 'suitcase',
             children: null
           }]
         }, {
@@ -70,13 +70,12 @@ export default Controller.extend({
             link: 'i-i-s-itog10-расчет-ост-врем-l',
             caption: i18n.t('forms.application.sitemap.документы.i-i-s-itog10-расчет-ост-врем-l.caption'),
             title: i18n.t('forms.application.sitemap.документы.i-i-s-itog10-расчет-ост-врем-l.title'),
-            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-itog10-договор-l',
             caption: i18n.t('forms.application.sitemap.документы.i-i-s-itog10-договор-l.caption'),
             title: i18n.t('forms.application.sitemap.документы.i-i-s-itog10-договор-l.title'),
-            icon: 'list',
+            icon: 'building',
             children: null
           }]
         }

@@ -26,7 +26,7 @@ namespace IIS.Itog10
     // *** Start programmer edit section *** (ДирОтдПоРабСКл CustomAttributes)
 
     // *** End programmer edit section *** (ДирОтдПоРабСКл CustomAttributes)
-    [PublishName("Директор отдела по работе с клиентами")]
+    [PublishName("ДиректорОтделаПоРаботеСКлиентами")]
     [AutoAltered()]
     [Caption("Дир отд по раб с кл")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]

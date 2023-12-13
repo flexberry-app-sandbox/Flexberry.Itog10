@@ -26,7 +26,7 @@ namespace IIS.Itog10
     // *** Start programmer edit section *** (ОказУслуг CustomAttributes)
 
     // *** End programmer edit section *** (ОказУслуг CustomAttributes)
-    [PublishName("Оказание услуг")]
+    [PublishName("ОказаниеУслуг")]
     [AutoAltered()]
     [Caption("Оказ услуг")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]

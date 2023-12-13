@@ -19,10 +19,10 @@ import IISItog10ДлительностьModel from './models/i-i-s-itog10-дли
 import IISItog10ДоговорModel from './models/i-i-s-itog10-договор';
 import IISItog10КлиентModel from './models/i-i-s-itog10-клиент';
 import IISItog10УслугиModel from './models/i-i-s-itog10-услуги';
-import Директор отдела по работе с клиентамиModel from './models/директор-отдела-по-работе-с-клиентами';
-import Затраченное времяModel from './models/затраченное-время';
-import Оказание услугModel from './models/оказание-услуг';
-import Расчет оставшегося времениModel from './models/расчет-оставшегося-времени';
+import ДиректорОтделаПоРаботеСКлиентамиModel from './models/директор-отдела-по-работе-с-клиентами';
+import ЗатраченноеВремяModel from './models/затраченное-время';
+import ОказаниеУслугModel from './models/оказание-услуг';
+import РасчетОставшегосяВремениModel from './models/расчет-оставшегося-времени';
 
 const translations = {};
 $.extend(true, translations, EmberFlexberryTranslations);
@@ -33,10 +33,10 @@ $.extend(true, translations, {
     'i-i-s-itog10-договор': IISItog10ДоговорModel,
     'i-i-s-itog10-клиент': IISItog10КлиентModel,
     'i-i-s-itog10-услуги': IISItog10УслугиModel,
-    'директор-отдела-по-работе-с-клиентами': Директор отдела по работе с клиентамиModel,
-    'затраченное-время': Затраченное времяModel,
-    'оказание-услуг': Оказание услугModel,
-    'расчет-оставшегося-времени': Расчет оставшегося времениModel
+    'директор-отдела-по-работе-с-клиентами': ДиректорОтделаПоРаботеСКлиентамиModel,
+    'затраченное-время': ЗатраченноеВремяModel,
+    'оказание-услуг': ОказаниеУслугModel,
+    'расчет-оставшегося-времени': РасчетОставшегосяВремениModel
   },
 
   'application-name': 'Itog10',
