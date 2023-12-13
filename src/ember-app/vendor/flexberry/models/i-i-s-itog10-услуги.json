@@ -66,7 +66,29 @@
           "index": 0
         }
       ],
-      "belongsTo": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ЗатраченноеВремя",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Затраченное время",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "default",
+          "caption": "",
+          "name": "затрВремя",
+          "relatedTo": "затраченное-время",
+          "inverse": null
+        }
+      ],
       "hasMany": []
     },
     {
@@ -80,7 +102,29 @@
           "index": 0
         }
       ],
-      "belongsTo": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ЗатраченноеВремя",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Затраченное время",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Затраченное время",
+          "name": "затрВремя",
+          "relatedTo": "затраченное-время",
+          "inverse": null
+        }
+      ],
       "hasMany": []
     }
   ],

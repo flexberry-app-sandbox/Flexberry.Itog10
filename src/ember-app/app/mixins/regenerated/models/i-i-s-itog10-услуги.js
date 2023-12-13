@@ -35,10 +35,16 @@ export let defineProjections = function (modelClass) {
   });
 
   modelClass.defineProjection('УслугиE', 'i-i-s-itog10-услуги', {
-    наименование: attr('Наименование', { index: 0 })
+    наименование: attr('Наименование', { index: 0 }),
+    затрВремя: belongsTo('затраченное-время', '', {
+      наименование: attr('Затраченное время', { index: 2 })
+    }, { index: 1 })
   });
 
   modelClass.defineProjection('УслугиL', 'i-i-s-itog10-услуги', {
-    наименование: attr('Наименование', { index: 0 })
+    наименование: attr('Наименование', { index: 0 }),
+    затрВремя: belongsTo('затраченное-время', 'Затраченное время', {
+      наименование: attr('Затраченное время', { index: 1 })
+    }, { index: -1, hidden: true })
   });
 };

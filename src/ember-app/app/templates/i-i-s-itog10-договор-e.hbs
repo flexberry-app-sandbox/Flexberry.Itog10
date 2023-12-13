@@ -66,6 +66,32 @@
     {{flexberry-validationmessage error=(v-get validationModel "тип" "message")}}
   </div>
   <div class="field">
+    <label>{{t "forms.i-i-s-itog10-договор-e.длительность-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.длительность
+      relationName="длительность"
+      projection="ДлительностьL"
+      title=(t "forms.i-i-s-itog10-договор-e.длительность-caption")
+      readonly=readonly
+      componentName="длительностьLookup"
+      class=(if (v-get validationModel "длительность" "isInvalid") "error")
+      data-test-i-i-s-itog10-договор-e-длительность=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "длительность" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.длительность.номер
+      class=(if (v-get validationModel.длительность "номер" "isInvalid") "error")
+      label=(t "forms.i-i-s-itog10-договор-e.длительность.номер-caption")
+      data-test-i-i-s-itog10-договор-e-длительность-номер=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.длительность "номер" "message")}}
+  </div>
+  <div class="field">
     {{flexberry-field
       readonly=readonly
       value=model.стоимость

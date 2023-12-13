@@ -109,10 +109,31 @@
           "name": "стоимость",
           "caption": "Стоимость",
           "hidden": false,
-          "index": 4
+          "index": 6
         }
       ],
       "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Длительность",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номер",
+              "caption": "Срок действия",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "default",
+          "caption": "",
+          "name": "длительность",
+          "relatedTo": "i-i-s-itog10-длительность",
+          "inverse": null
+        },
         {
           "lookupValue": null,
           "lookupValueField": null,
@@ -124,22 +145,22 @@
               "name": "фамилия",
               "caption": "Фамилия директора",
               "hidden": false,
-              "index": 6
+              "index": 8
             },
             {
               "name": "имя",
               "caption": "Имя директора",
               "hidden": false,
-              "index": 7
+              "index": 9
             },
             {
               "name": "отчество",
               "caption": "Отчество директора",
               "hidden": false,
-              "index": 8
+              "index": 10
             }
           ],
-          "index": 5,
+          "index": 7,
           "type": "default",
           "caption": "Директор",
           "name": "дирОтдПоРабСКл",
@@ -157,22 +178,22 @@
               "name": "фамилия",
               "caption": "Фамилия клиента",
               "hidden": false,
-              "index": 10
+              "index": 12
             },
             {
               "name": "имя",
               "caption": "Имя клиента",
               "hidden": false,
-              "index": 11
+              "index": 13
             },
             {
               "name": "отчество",
               "caption": "Отчество клиента",
               "hidden": false,
-              "index": 12
+              "index": 14
             }
           ],
-          "index": 9,
+          "index": 11,
           "type": "default",
           "caption": "Клиент",
           "name": "клиент",
@@ -214,10 +235,31 @@
           "name": "стоимость",
           "caption": "Стоимость",
           "hidden": false,
-          "index": 4
+          "index": 5
         }
       ],
       "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Длительность",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номер",
+              "caption": "Длительность действия",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Длительность действия",
+          "name": "длительность",
+          "relatedTo": "i-i-s-itog10-длительность",
+          "inverse": null
+        },
         {
           "lookupValue": null,
           "lookupValueField": null,
@@ -229,7 +271,7 @@
               "name": "фамилия",
               "caption": "Фамилия директора",
               "hidden": false,
-              "index": 5
+              "index": 6
             }
           ],
           "index": -1,
@@ -250,7 +292,7 @@
               "name": "фамилия",
               "caption": "Фамилия клиента",
               "hidden": false,
-              "index": 6
+              "index": 7
             }
           ],
           "index": -1,
