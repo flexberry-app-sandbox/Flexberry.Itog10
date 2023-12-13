@@ -28,19 +28,19 @@ export default Controller.extend({
             link: 'i-i-s-itog10-длительность-l',
             caption: i18n.t('forms.application.sitemap.прочее.i-i-s-itog10-длительность-l.caption'),
             title: i18n.t('forms.application.sitemap.прочее.i-i-s-itog10-длительность-l.title'),
-            icon: 'folder',
+            icon: 'archive',
             children: null
           }, {
             link: 'i-i-s-itog10-затр-время-l',
             caption: i18n.t('forms.application.sitemap.прочее.i-i-s-itog10-затр-время-l.caption'),
             title: i18n.t('forms.application.sitemap.прочее.i-i-s-itog10-затр-время-l.title'),
-            icon: 'phone',
+            icon: 'list',
             children: null
           }, {
             link: 'i-i-s-itog10-услуги-l',
             caption: i18n.t('forms.application.sitemap.прочее.i-i-s-itog10-услуги-l.caption'),
             title: i18n.t('forms.application.sitemap.прочее.i-i-s-itog10-услуги-l.title'),
-            icon: 'table',
+            icon: 'calendar',
             children: null
           }]
         }, {
@@ -58,7 +58,7 @@ export default Controller.extend({
             link: 'i-i-s-itog10-клиент-l',
             caption: i18n.t('forms.application.sitemap.справочники.i-i-s-itog10-клиент-l.caption'),
             title: i18n.t('forms.application.sitemap.справочники.i-i-s-itog10-клиент-l.title'),
-            icon: 'edit',
+            icon: 'calendar',
             children: null
           }]
         }, {
@@ -70,13 +70,13 @@ export default Controller.extend({
             link: 'i-i-s-itog10-расчет-ост-врем-l',
             caption: i18n.t('forms.application.sitemap.документы.i-i-s-itog10-расчет-ост-врем-l.caption'),
             title: i18n.t('forms.application.sitemap.документы.i-i-s-itog10-расчет-ост-врем-l.title'),
-            icon: 'book',
+            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-itog10-договор-l',
             caption: i18n.t('forms.application.sitemap.документы.i-i-s-itog10-договор-l.caption'),
             title: i18n.t('forms.application.sitemap.документы.i-i-s-itog10-договор-l.title'),
-            icon: 'chart bar',
+            icon: 'list',
             children: null
           }]
         }
